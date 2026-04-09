@@ -9,7 +9,7 @@
 		"astro": "astro"
 	},
 	"devDependencies": {
-		"@astropub/md": "*",
-		"astro": "4"
+		"astro-md-2": "*",
+		"astro": "6"
 	}
 }

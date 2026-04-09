@@ -10,10 +10,11 @@
 		"bump:patch": "npm --workspaces --git-tag-version false version patch && npm --git-tag-version false version patch",
 		"bump:minor": "npm --workspaces --git-tag-version false version minor && npm --git-tag-version false version minor",
 		"bump:major": "npm --workspaces --git-tag-version false version major && npm --git-tag-version false version major",
+		"test": "vitest run",
 		"start": "cd demo; astro dev",
 		"build": "cd demo; astro build",
 		"serve": "cd demo; astro preview",
-		"release": "npm --workspaces publish --access public"
+		"release": "npm publish --workspace packages/md --access public"
 	},
 	"prettier": {
 		"semi": false,
@@ -25,7 +26,8 @@
 		"startCommand": "npm start"
 	},
 	"devDependencies": {
-		"astro": "4",
-		"types-object": "latest"
+		"astro": "6",
+		"types-object": "latest",
+		"vitest": "^4.1.4"
 	}
 }

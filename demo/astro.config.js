@@ -1,5 +1,5 @@
 import { defineConfig } from 'astro/config'
-import markdownIntegration from '@astropub/md'
+import markdownIntegration from 'astro-md-2'
 
 export default defineConfig({
 	integrations: [
