@@ -13,7 +13,7 @@
 		"start": "cd demo; astro dev",
 		"build": "cd demo; astro build",
 		"serve": "cd demo; astro preview",
-		"release": "npm --workspaces packages/md --access public"
+		"release": "npm publish --workspace packages/md --access public"
 	},
 	"prettier": {
 		"semi": false,
