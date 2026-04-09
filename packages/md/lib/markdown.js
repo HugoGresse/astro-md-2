@@ -1,6 +1,6 @@
 import { createMarkdownProcessor } from '@astrojs/markdown-remark'
 import { shared } from './shared.js'
-import { HTMLString } from './html-string.js'
+import { HTMLString } from 'astro/runtime/server/index.js'
 
 const processor = await createMarkdownProcessor({
 	...shared.markdownConfig,

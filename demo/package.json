@@ -10,6 +10,6 @@
 	},
 	"devDependencies": {
 		"@astropub/md": "*",
-		"astro": "4"
+		"astro": "6"
 	}
 }
