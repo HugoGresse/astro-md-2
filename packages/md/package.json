@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json.schemastore.org/package.json",
-	"name": "@astropub/md",
+	"name": "astro-md-2",
 	"description": "Render any Markdown content in Astro",
 	"version": "1.0.0",
 	"type": "module",

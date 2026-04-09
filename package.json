@@ -10,6 +10,7 @@
 		"bump:patch": "npm --workspaces --git-tag-version false version patch && npm --git-tag-version false version patch",
 		"bump:minor": "npm --workspaces --git-tag-version false version minor && npm --git-tag-version false version minor",
 		"bump:major": "npm --workspaces --git-tag-version false version major && npm --git-tag-version false version major",
+		"test": "vitest run",
 		"start": "cd demo; astro dev",
 		"build": "cd demo; astro build",
 		"serve": "cd demo; astro preview",
@@ -26,6 +27,7 @@
 	},
 	"devDependencies": {
 		"astro": "6",
-		"types-object": "latest"
+		"types-object": "latest",
+		"vitest": "^4.1.4"
 	}
 }
