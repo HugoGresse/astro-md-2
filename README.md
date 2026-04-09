@@ -23,6 +23,16 @@ import { markdown } from 'astro-md-2'
 }
 ```
 
+## Why this fork?
+
+`astro-md-2` is a maintained fork of [`@astropub/md`](https://github.com/astro-community/md) by Jonathan Neal.
+
+The original package was abandoned and is **incompatible with Astro 6** (and `@astrojs/markdown-remark` v7) due to breaking API changes in those releases. This fork updates the integration to work with the current Astro ecosystem:
+
+- Targets **Astro 6** and **`@astrojs/markdown-remark` ^7**
+- Uses Astro's built-in `HTMLString` from `astro/runtime/server/index.js` instead of a custom implementation
+- Keeps the same public API so migration from `@astropub/md` is a one-line import change
+
 ## Usage
 
 Add **Astro Markdown** to your project.
